@@ -8,6 +8,31 @@ body
 	font-family: Arial;
 	font-size: 16px;
 }
+footer
+{
+	color: rgba(255,255,255,0.7);
+	background: #22BCE0;
+	text-align: center;
+	padding: 1em;
+}
+footer p:first-child /*seudo clases*/
+{
+	border: 1px solid red;
+	margin-bottom: 0;
+}
+footer p:last-child
+{
+	border: 1px solid red;
+	margin-top: 0;
+}
+footer p:last-child:before
+{
+	content: "- ";
+}
+footer p:last-child:after
+{
+	content: " -";
+}
 header
 {
 	background: #343B54;
@@ -44,3 +69,61 @@ header #logo img
 	margin-right:  0.5em;
 	width: 52px;
 }
+nav
+{
+	background: #80BCA3;
+	padding: 0 0.5em;
+	position: relative;
+}
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul #publicar_nav
+{
+	border: 1px solid red;
+	position: absolute;
+	top: -0.3em;
+	right: 0;
+}
+nav ul #publicar_nav a
+{
+	background: #22BCE0;
+	border-radius: 5px;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 10px;
+	font-style: italic;
+	padding: 0.8em 0.5em;
+	text-decoration: none;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+nav ul li
+{
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+nav ul li a
+{
+	background: red;
+	color: white;
+	display: block;
+	padding: 0.5em 0;
+	text-decoration: none;
+}
+#contenido
+{
+	margin: 1em;
+}
+#contenido .item
+{
+	background: white;
+}
+
+
+
+
+
+
+
+
